@@ -11,6 +11,9 @@ group = project.maven_group
 
 repositories {
     mavenCentral()
+	maven {
+		url "https://maven.shadew.net/"
+	}
     // Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -35,11 +38,11 @@ dependencies {
     modImplementation libs.bundles.qkl
 
     // Kotlin Stuff
-    implementation "org.jetbrains.kotlin:kotlin-jdk8"
+    implementation libs.kotlin.stdlib
     dokkaHtmlPlugin libs.dokka.html // Uncomment if you want to use Dokka to generate HTML documentation with KDoc.
 
     // Other Libraries
-    implementation libs.shwutil
+    implementation libs.shwutil // Uncomment this line if you want to use ShwUtil by FoxShadew ().
 }
 
 processResources {

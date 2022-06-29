@@ -24,6 +24,7 @@ qkl_core = { module = "org.quiltmc.quilt-kotlin-libraries:core", version.ref = "
 qkl_minecraft = { module = "org.quiltmc.quilt-kotlin-libraries:minecraft", version.ref = "quilt_kotlin_libraries" }
 qkl_std = { module = "org.quiltmc.quilt-kotlin-libraries:qsl", version.ref = "quilt_kotlin_libraries" }
 
+kotlin_stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
 dokka_html = { module = "org.jetbrains.dokka:kotlin-as-java-plugin", version.ref = "dokka" }
 
 shwutil = { module = "net.shadew:shwutil", version.ref = "shwutil" }
