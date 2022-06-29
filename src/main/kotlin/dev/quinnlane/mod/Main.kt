@@ -1,6 +1,8 @@
 package dev.quinnlane.mod
 
-import dev.quinnlane.mod.meta.ModInformation
+import dev.quinnlane.mod.meta.registerInformation
+import dev.quinnlane.mod.meta.MOD_NAME
+import dev.quinnlane.mod.meta.MOD_VERSION
 
 import org.quiltmc.loader.api.ModContainer
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer
@@ -17,11 +19,7 @@ class Main: ModInitializer {
     }
 
     override fun onInitialize(mod: ModContainer) {
-        ModInformation.MOD_NAME = mod.metadata().name()
-        ModInformation.MOD_VERSION = mod.metadata().version().raw()
-        ModInformation.MOD_DESCRIPTION = mod.metadata().description()
-        ModInformation.MOD_LICENSE = mod.metadata().licenses()
-
-        l.info("${ModInformation.MOD_NAME} (Version ${ModInformation.MOD_VERSION}) has been initialized!")
+        registerInformation(mod)
+        l.info("${MOD_NAME} (Version ${MOD_VERSION}) has been initialized!")
     }
 }
