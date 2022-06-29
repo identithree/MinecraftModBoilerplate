@@ -39,10 +39,10 @@ dependencies {
 
     // Kotlin Stuff
     implementation libs.kotlin.stdlib
-    dokkaHtmlPlugin libs.dokka.html // Uncomment if you want to use Dokka to generate HTML documentation with KDoc.
+    // dokkaHtmlPlugin libs.dokka.html // Uncomment if you want to use Dokka to generate HTML documentation with KDoc.
 
     // Other Libraries
-    implementation libs.shwutil // Uncomment this line if you want to use ShwUtil by FoxShadew ().
+    // implementation libs.shwutil // Uncomment this line if you want to use ShwUtil by FoxShadew (https://github.com/FoxShadew/ShwUtil).
 }
 
 processResources {
